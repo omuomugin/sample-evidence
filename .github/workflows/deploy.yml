@@ -1,6 +1,7 @@
 name: Deploy to GitHub Pages
 
 on:
+  workflow_dispatch: 
   schedule:
     # This is every 60 minutes
     - cron: '*/60 * * * *' 
