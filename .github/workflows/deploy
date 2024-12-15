@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: 'main' # or whichever branch you want to deploy from
+  schedule:
+    # This is every 60 minutes
+    - cron: '*/60 * * * *' 
 
 jobs:
   build:
